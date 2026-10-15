@@ -11,7 +11,7 @@
 <p class="back"><a href="../">CND Mobile Games</a></p>
 
 <h1>Car Time Trial – Privacy Policy</h1>
-<p class="meta">Effective date: October 15, 2026</p>
+<p class="meta">Effective date: October 15, 2026 (updated: Google Firebase Analytics and Crashlytics)</p>
 
 <p>This Privacy Policy explains how information is handled in the mobile game <strong>Car Time Trial</strong> (the
 “Game”). The Game is developed by <strong>CND Mobile Games</strong>, operated by <strong>Ciprian Daniel Corondan</strong>,
@@ -24,8 +24,13 @@ Romania (“we”, “us”), who is responsible for the Game within the meaning
 <li>Your progress and settings are stored only on your device.</li>
 <li>The Game shows ads through <strong>Google AdMob</strong>. Google may collect device identifiers and usage data to
 show and measure ads, as described below.</li>
+<li>The Game uses <strong>Google Firebase</strong> to understand how the Game is played (Analytics) and to receive
+reports when it crashes (Crashlytics).</li>
 <li>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before
-personalised ads are shown, and you can change your choice at any time.</li>
+personalised ads are shown and before gameplay statistics are collected, and you can change your choice at any
+time.</li>
+<li>In US states with privacy laws, you can opt out of the use of your data for targeted advertising at any time with
+<strong>PRIVACY CHOICES</strong> in the Game’s Settings.</li>
 </ul>
 
 <h2>Information stored on your device</h2>
@@ -48,17 +53,55 @@ and, where you have given consent, to show ads personalised to your interests. L
 <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use
 its services</a> and in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
+<h2>Gameplay statistics (Google Analytics for Firebase)</h2>
+<p>The Game uses Google Analytics for Firebase, provided by Google, to understand how the Game is played so we can
+improve it, for example which levels are too hard. It records:</p>
+<ul>
+<li>game events: levels started, finished or abandoned, finish times and medals, coins earned and spent (for example on
+cars and upgrades) and rewarded ads watched;</li>
+<li>an app instance identifier, the advertising ID and session information (when and how long the Game is used);</li>
+<li>device and app information, such as device model, operating system version, language, country or city derived
+from the IP address, and the source the Game was installed from.</li>
+</ul>
+<p>In the European Economic Area, the United Kingdom and Switzerland, these statistics are collected only after you
+consent in the consent message; until then the Game starts with statistics turned off. Analytics data is linked to an
+app instance identifier, not to your name, and user-level data is kept for 2 months (the Google Analytics retention setting we use). See
+<a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+
+<h2>Crash reports (Firebase Crashlytics)</h2>
+<p>If the Game crashes or hits an error, Firebase Crashlytics sends a report so we can fix the problem. The report
+contains technical information: what went wrong in the code, the screen of the Game where it happened, device model,
+operating system version, app version, free memory and storage, and a random installation identifier. It does not
+contain your name or contact details. Crash reports are sent based on our legitimate interest in keeping the Game working
+and are kept for 90 days.</p>
+
 <h2>Your consent and choices</h2>
 <p>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game shows a consent message when it
 starts, using Google’s User Messaging Platform (a Google-certified consent management platform). You can consent,
 refuse, or choose individual purposes and partners. If you refuse, you may still see ads, but they will not be
 personalised.</p>
 <p>You can change or withdraw your choice at any time: open <strong>Settings</strong> in the Game’s main menu and tap
-<strong>PRIVACY</strong>.</p>
+<strong>PRIVACY CHOICES</strong>.</p>
 <p>On Android you can also reset or delete your advertising ID, or opt out of personalised ads, in your device settings
 (<em>Settings → Privacy → Ads</em>, or <em>Settings → Google → Ads</em> on some devices).</p>
-<p>The legal basis for personalised advertising and for storing or accessing information on your device is your consent.
-Basic ad delivery, measurement and fraud prevention rely on legitimate interests, as listed in the consent message.</p>
+<p>The legal basis for personalised advertising, gameplay statistics and for storing or accessing information on your
+device is your consent. Basic ad delivery, measurement, fraud prevention and crash reports rely on legitimate interests,
+as listed in the consent message.</p>
+
+<h2>Your privacy rights in the United States</h2>
+<p>Residents of US states with consumer privacy laws (such as California, Colorado, Connecticut, Texas, Virginia and
+others) have the right to know what personal information is collected about them, to access, correct or delete it, and to
+opt out of the “sale” or “sharing” of personal information and of targeted advertising.</p>
+<p>We do not sell personal information for money. However, allowing Google AdMob and its partners to use device
+identifiers to show personalised ads may be considered “selling” or “sharing” personal information, or “targeted
+advertising”, under these laws. In the last 12 months the Game has collected, through Google: identifiers (advertising ID,
+app instance ID, IP address), internet or other electronic network activity (gameplay events, ad interactions), approximate
+location derived from the IP address, and device information, all as described above.</p>
+<p><strong>Your Privacy Choices:</strong> to opt out, open <strong>Settings</strong> in the Game and tap
+<strong>PRIVACY CHOICES</strong> (the button appears where these laws apply). You can also reset your advertising ID or
+opt out of personalised ads in your device settings. To exercise your other rights, or to appeal a decision about your
+request, email us at the address below; we respond within 45 days. We will not treat you differently for exercising your
+rights. We do not knowingly sell or share the personal information of anyone under 16.</p>
 
 <h2>Game engine</h2>
 <p>The Game is built with the Unity engine. The Unity engine may send anonymous technical statistics about the device
@@ -68,8 +111,12 @@ Policy</a>.</p>
 
 <h2>Permissions</h2>
 <ul>
-<li><strong>Internet and network access</strong> – to load ads and the consent message.</li>
-<li><strong>Advertising ID</strong> – used by AdMob as described above.</li>
+<li><strong>Internet and network access</strong> – to load ads and the consent message and to send statistics and crash
+reports.</li>
+<li><strong>Advertising ID</strong> (and Android’s privacy-preserving advertising APIs) – used by AdMob and Analytics as
+described above.</li>
+<li><strong>Install referrer</strong> – lets Analytics know which store or campaign the Game was installed from.</li>
+<li><strong>Keep awake / background work</strong> – lets Firebase finish sending statistics and reports.</li>
 <li><strong>Vibration</strong> – short vibrations during races; you can turn them off in the Game’s Settings.</li>
 </ul>
 
@@ -79,14 +126,17 @@ country). We do not knowingly collect personal information from children. If you
 information through the Game, please contact us and we will help remove it.</p>
 
 <h2>Data retention and international transfers</h2>
-<p>We do not keep any personal data about you. Data collected by Google is kept according to Google’s own policies. Google
+<p>We do not keep personal data about you on our own servers. Statistics and crash reports are stored by Google
+(Firebase) on our behalf for the periods described above; other data collected by Google is kept according to Google’s
+own policies. Google
 may process data outside the European Economic Area; where it does, it relies on safeguards approved by the European
 Commission, such as Standard Contractual Clauses or the EU–US Data Privacy Framework.</p>
 
 <h2>Your rights</h2>
 <p>Under the GDPR you have the right to access, correct or delete your personal data, to restrict or object to its
-processing, to data portability and to withdraw your consent at any time. Because we do not store personal data about
-you, most requests about advertising data are handled by Google; you can contact us and we will help. You also have the
+processing, to data portability and to withdraw your consent at any time. Statistics and crash reports are linked only to
+random identifiers on your device, so to help with a request we may ask you for details from the Game; for advertising
+data you can also contact Google directly. Contact us and we will help. You also have the
 right to lodge a complaint with a data protection authority – in Romania, the National Supervisory Authority for
 Personal Data Processing (ANSPDCP, <a href="https://www.dataprotection.ro">www.dataprotection.ro</a>).</p>
 
