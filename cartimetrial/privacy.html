@@ -11,7 +11,8 @@
 <p class="back"><a href="../">CND Mobile Games</a></p>
 
 <h1>Car Time Trial – Privacy Policy</h1>
-<p class="meta">Effective date: October 15, 2026 (updated: Google Firebase Analytics and Crashlytics)</p>
+<p class="meta">Effective date: November 13, 2026 (updated: consent handling for statistics, data retention, device backups,
+crash reports, Unity diagnostics, link to this policy in the Game)</p>
 
 <p>This Privacy Policy explains how information is handled in the mobile game <strong>Car Time Trial</strong> (the
 “Game”). The Game is developed by <strong>CND Mobile Games</strong>, operated by <strong>Ciprian Daniel Corondan</strong>,
@@ -21,14 +22,16 @@ Romania (“we”, “us”), who is responsible for the Game within the meaning
 <h2>Summary</h2>
 <ul>
 <li>The Game has no user accounts and we do not ask for your name, email or any other personal details.</li>
-<li>Your progress and settings are stored only on your device.</li>
+<li>Your progress and settings are stored on your device (and in your Android backup, if you have backups turned
+on).</li>
 <li>The Game shows ads through <strong>Google AdMob</strong>. Google may collect device identifiers and usage data to
 show and measure ads, as described below.</li>
 <li>The Game uses <strong>Google Firebase</strong> to understand how the Game is played (Analytics) and to receive
 reports when it crashes (Crashlytics).</li>
-<li>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before
-personalised ads are shown and before gameplay statistics are collected, and you can change your choice at any
-time.</li>
+<li>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before personalised ads are shown and before gameplay statistics are
+collected; if you refuse, Google only receives limited data without device identifiers. You can change your choice at
+any time.</li>
+<li>You can ask us to delete data related to the Game: see <a href="#data-deletion">Data Deletion Requests</a>.</li>
 <li>In US states with privacy laws, you can opt out of the use of your data for targeted advertising at any time with
 <strong>PRIVACY CHOICES</strong> in the Game’s Settings.</li>
 </ul>
@@ -37,7 +40,8 @@ time.</li>
 <p>The Game saves your progress (completed levels, best times, medals, the recording of your best lap used for the
 “ghost” car, coins, cars and upgrades) and your settings (volume, graphics quality, vibration and display options)
 locally on your device. This information is not sent to us. It is deleted when you uninstall the Game or clear its data
-in your device settings.</p>
+in your device settings. If backups are turned on for your Google account, Android may also back up this data to your
+account and restore it when you reinstall the Game; we have no access to these backups.</p>
 
 <h2>Advertising (Google AdMob)</h2>
 <p>The Game uses Google AdMob, provided by Google Ireland Limited / Google LLC, to show ads: an optional rewarded ad
@@ -57,36 +61,61 @@ its services</a> and in the <a href="https://policies.google.com/privacy">Google
 <p>The Game uses Google Analytics for Firebase, provided by Google, to understand how the Game is played so we can
 improve it, for example which levels are too hard. It records:</p>
 <ul>
-<li>game events: levels started, finished or abandoned, finish times and medals, coins earned and spent (for example on
-cars and upgrades) and rewarded ads watched;</li>
+<li>game events: levels started, finished or abandoned (finished, restarted or exited), race times and medals, coins
+earned and spent (for example on cars and upgrades), rewarded ads watched, and whether the device was online and an ad
+was available when a race started;</li>
+<li>events collected automatically by the Firebase and AdMob software, such as first launch, sessions, screen views, app
+updates and removals, and ad requests, impressions, clicks, rewards and estimated ad revenue;</li>
 <li>an app instance identifier, the advertising ID and session information (when and how long the Game is used);</li>
 <li>device and app information, such as device model, operating system version, language, country or city derived
 from the IP address, and the source the Game was installed from.</li>
 </ul>
-<p>In the European Economic Area, the United Kingdom and Switzerland, these statistics are collected only after you
-consent in the consent message; until then the Game starts with statistics turned off. Analytics data is linked to an
-app instance identifier, not to your name, and user-level data is kept for 2 months (the Google Analytics retention setting we use). See
+<p>From version 1.0.4, the Game starts with statistics turned off and keeps them off until it learns your consent status
+from Google’s consent service; if your device is offline when you first open the Game, no statistics are collected in
+that session. In earlier versions, statistics start when the Game opens with the consent signals set to “denied”, so
+until your consent status is known only limited data without identifiers is sent.</p>
+<ul>
+<li>In the European Economic Area, the United Kingdom and Switzerland, the Game first asks for your consent. If you
+consent, statistics are collected as described above. If you refuse, or later withdraw your consent, Google Analytics
+only receives events without the app instance identifier or the advertising ID, which Google uses for aggregated
+measurement and statistical modelling (Google’s “consent mode”).</li>
+<li>Elsewhere, statistics are collected once the Game has confirmed that consent is not required.</li>
+</ul>
+<p>We do not use Analytics data for personalised advertising: the advertising-related consent signals for Analytics (ad
+user data and ad personalisation) stay turned off outside the European Economic Area, the United Kingdom and Switzerland,
+and there they follow your choice. Analytics data is linked to an app instance identifier, not to your name.</p>
+<p>With the Google Analytics data retention settings we use, event-level data is kept for 2 months and user-level data
+for 14 months. The 14-month period starts again each time you use the Game, so user-level data is deleted 14 months
+after your last use. Aggregated reports that do not identify individual users are not affected by these settings. See
 <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
 
 <h2>Crash reports (Firebase Crashlytics)</h2>
 <p>If the Game crashes or hits an error, Firebase Crashlytics sends a report so we can fix the problem. The report
 contains technical information: what went wrong in the code, the screen of the Game where it happened, device model,
 operating system version, app version, free memory and storage, and a random installation identifier. It does not
-contain your name or contact details. Crash reports are sent based on our legitimate interest in keeping the Game working
-and are kept for 90 days.</p>
+contain your name or contact details.
+<!-- LEGAL REVIEW: "legitimate interest" for crash reports is unchanged from the published policy (October 15, 2026);
+     confirm it still applies now that the policy states that crash reports are sent regardless of the statistics choice. -->
+Crash reports are sent based on our legitimate interest in keeping the Game working
+and are kept for 90 days. Crash reports are sent whether or not you consent to gameplay statistics. If you have consented
+to statistics, a report may also include the most recent game events, such as the level being played.</p>
 
 <h2>Your consent and choices</h2>
-<p>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game shows a consent message when it
-starts, using Google’s User Messaging Platform (a Google-certified consent management platform). You can consent,
+<p>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game shows a consent message the first
+time it starts (and again if your consent needs to be renewed), using Google’s User Messaging Platform (a Google-certified consent management platform). You can consent,
 refuse, or choose individual purposes and partners. If you refuse, you may still see ads, but they will not be
 personalised.</p>
 <p>You can change or withdraw your choice at any time: open <strong>Settings</strong> in the Game’s main menu and tap
-<strong>PRIVACY CHOICES</strong>.</p>
+<strong>PRIVACY CHOICES</strong>. From version 1.0.4, you can also open this Privacy Policy from the Game, in any country: open
+<strong>Settings</strong> and tap <strong>PRIVACY POLICY</strong>.</p>
 <p>On Android you can also reset or delete your advertising ID, or opt out of personalised ads, in your device settings
 (<em>Settings → Privacy → Ads</em>, or <em>Settings → Google → Ads</em> on some devices).</p>
-<p>The legal basis for personalised advertising, gameplay statistics and for storing or accessing information on your
-device is your consent. Basic ad delivery, measurement, fraud prevention and crash reports rely on legitimate interests,
-as listed in the consent message.</p>
+<!-- LEGAL REVIEW NEEDED before publishing: the legal basis for the limited statistics without identifiers that Google
+     Analytics receives after a refusal (consent mode) has not been decided. Do not state "legitimate interests" for them
+     until this has been checked. Add the agreed wording to the paragraph below. -->
+<p>The legal basis for personalised advertising, gameplay statistics with identifiers and for storing or accessing
+information on your device is your consent. Basic ad delivery, measurement, fraud prevention and crash reports rely on
+legitimate interests, as listed in the consent message.</p>
 
 <h2>Your privacy rights in the United States</h2>
 <p>Residents of US states with consumer privacy laws (such as California, Colorado, Connecticut, Texas, Virginia and
@@ -104,8 +133,15 @@ request, email us at the address below; we respond within 45 days. We will not t
 rights. We do not knowingly sell or share the personal information of anyone under 16.</p>
 
 <h2>Game engine</h2>
-<p>The Game is built with the Unity engine. The Unity engine may send anonymous technical statistics about the device
-(such as hardware and operating system information) to Unity Technologies. See the
+<p>The Game is built with the Unity engine, provided by Unity Technologies. The engine may send Unity basic technical
+statistics about the device (such as hardware model, operating system and graphics capabilities) and, through Unity
+Engine Diagnostics, reports when the Game crashes or stops responding (technical details of the error, device model,
+operating system version and app version). Unity uses this data to keep the engine working on different devices and we
+use it to find and fix problems. It is sent whether or not you consent to gameplay statistics and does not include your
+name or contact details.
+<!-- LEGAL REVIEW NEEDED: legal basis for Unity statistics and Engine Diagnostics (not stated yet; possibly legitimate
+     interests, to be confirmed), and whether Unity acts as our processor or as an independent controller for this data. -->
+See the
 <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy
 Policy</a>.</p>
 
@@ -138,7 +174,58 @@ processing, to data portability and to withdraw your consent at any time. Statis
 random identifiers on your device, so to help with a request we may ask you for details from the Game; for advertising
 data you can also contact Google directly. Contact us and we will help. You also have the
 right to lodge a complaint with a data protection authority – in Romania, the National Supervisory Authority for
-Personal Data Processing (ANSPDCP, <a href="https://www.dataprotection.ro">www.dataprotection.ro</a>).</p>
+Personal Data Processing (ANSPDCP, <a href="https://www.dataprotection.ro">www.dataprotection.ro</a>). To ask us to
+delete data, see <a href="#data-deletion">Data Deletion Requests</a> below.</p>
+
+<h2 id="data-deletion">Data Deletion Requests</h2>
+<p>This section explains how to request the deletion of data related to <strong>Car Time Trial: Mountain Race</strong>
+(shown as “Car Time Trial” on your device), published on Google Play by <strong>CND Mobile Games</strong>. The Game has no
+user accounts, so there is no account to delete; the data involved is described below.</p>
+
+<h3>How to request deletion</h3>
+<ol>
+<li>Send an email to <a href="mailto:ccipriandaniel@gmail.com">ccipriandaniel@gmail.com</a> with the subject
+“Car Time Trial – data deletion request”.</li>
+<li>Tell us which data your request is about (see the list below). If you can, add the device model and the approximate
+dates when you installed and last used the Game. We do not need your name, and please do not send passwords or other
+sensitive information.</li>
+<li>We will reply within one month (within 45 days for requests under US state privacy laws) and tell you what we were
+able to delete. If we need more information to find your data, we will tell you what is needed.</li>
+</ol>
+
+<h3>What can be deleted, and how</h3>
+<ul>
+<li><strong>Progress and settings on your device</strong> (levels, best times, medals, ghost car recordings, coins, cars,
+upgrades and settings). We do not have a copy of this data. You can delete it yourself at any time, with immediate
+effect, by uninstalling the Game or by clearing its data in your device settings (for example <em>Settings → Apps → Car
+Time Trial → Storage → Clear storage</em>; the names may differ on your device).</li>
+<li><strong>Android backup.</strong> If backups are turned on for your Google account, Android may keep a copy of the
+Game’s data in your Google account. This backup is stored and managed by Google; we cannot access or delete it. You can
+delete it yourself in the backup settings of your device or Google account (for example in Google Drive, under
+<em>Backups</em>).</li>
+<li><strong>Gameplay statistics (Google Analytics for Firebase).</strong> This data is linked to a random app instance
+identifier, not to your name or email address. We can ask Google to delete the data linked to a specific app instance
+identifier, but the Game does not show this identifier and we cannot find your data from your email address alone, so we
+may be unable to identify the data that belongs to you. In any case, it is deleted automatically: event-level data after
+2 months and user-level data 14 months after you last used the Game. To stop statistics with identifiers from now on,
+use <strong>PRIVACY CHOICES</strong> in the Game’s Settings (where available) or uninstall the Game.</li>
+<li><strong>Crash reports (Firebase Crashlytics).</strong> Crash reports are linked only to a random installation
+identifier, so we usually cannot tell which reports came from your device. They are deleted automatically after 90
+days.</li>
+<li><strong>Advertising data (Google AdMob).</strong> Data used to show and measure ads is processed by Google under its
+own privacy policy, and we do not have access to it. You can reset or delete your advertising ID in your device settings
+and manage or delete data held by Google through your Google Account or the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+<li><strong>Unity engine data.</strong> Technical statistics and diagnostics sent to Unity Technologies are handled under
+the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy
+Policy</a>, which explains how to make requests to Unity directly.</li>
+<li><strong>Your emails to us.</strong> We keep the correspondence about your request only as long as needed to handle it
+and to show that it was handled, and then delete it.
+<!-- LEGAL REVIEW NEEDED: retention period for deletion-request emails (for example a fixed number of months) and its
+     legal basis; not stated yet. --></li>
+</ul>
+<p>We will not be able to delete data that we cannot link to you, or data held by Google or Unity under their own
+policies; in those cases we will explain what you can do yourself, as described above.</p>
 
 <h2>Changes to this policy</h2>
 <p>We may update this Privacy Policy when the Game changes. The new version will be published on this page with a new
